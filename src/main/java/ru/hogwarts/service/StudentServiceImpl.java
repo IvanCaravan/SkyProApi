@@ -1,45 +1,52 @@
 package ru.hogwarts.service;
 
 import org.springframework.stereotype.Service;
+import ru.hogwarts.exception.StudentNotFoundException;
 import ru.hogwarts.model.Student;
+import ru.hogwarts.repository.StudentRepository;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
+
+
 @Service
-public class StudentServiceImpl {
-    private final HashMap<Long, Student> students = new HashMap<>();
-    private long count = 0;
+public class StudentServiceImpl implements StudentService {
+    private final StudentRepository studentRepository;
 
-    public Student addStudent(Student student) {
-        student.setId(count++);
-        students.put(student.getId(), student);
-        return student;
+    public StudentServiceImpl(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
     }
 
-    public Student findStudent(long id) {
-        return students.get(id);
+    @Override
+    public Student createStudent(Student student) {
+        return studentRepository.save(student);
     }
 
-    public Student editStudent(Student student) {
-        if (!students.containsKey(student.getId())) {
-            return null;
-        }
-        students.put(student.getId(), student);
-        return student;
+    @Override
+    public Student getStudent(Long id) {
+        return studentRepository.findById(id).orElseThrow(() -> new StudentNotFoundException("Student not found"));
     }
 
-    public Student deleteStudent(long id) {
-        return students.remove(id);
+    @Override
+    public Student updateStudent(Long id, Student student) {
+        Student existing = getStudent(id);
+        existing.setName(student.getName());
+        return studentRepository.save(existing);
     }
 
-    public Collection<Student> findByAge(int age) {
-        ArrayList<Student> result = new ArrayList<>();
-        for (Student student : students.values()) {
-            if (student.getAge() == age) {
-                result.add(student);
-            }
-        }
-        return result;
+
+    @Override
+    public void removeStudent(Long id) {
+        studentRepository.existsById(id);
     }
+
+    @Override
+    public Collection<Student> getAll() {
+        return studentRepository.findAll();
+    }
+
+    @Override
+    public Collection<Student> getAllByAge(int age) {
+        return studentRepository.getAllByAge(age);
+    }
+
 }

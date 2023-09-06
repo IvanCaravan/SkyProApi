@@ -1,18 +1,23 @@
 package ru.hogwarts.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
+@Entity
 public class Student {
-
-    private long id;
+    @Id
+    @GeneratedValue
+    private Long id;
     private String name;
     private int age;
 
     public Student() {
     }
 
-    public Student(long id, String name, int age) {
-        this.id = id;
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -45,7 +50,7 @@ public class Student {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
