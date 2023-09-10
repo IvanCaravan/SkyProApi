@@ -50,4 +50,6 @@ public class FacultyServiceImpl implements FacultyService {
         return facultyRepository.getAllByColor(color);
     }
 
+    
+
 }

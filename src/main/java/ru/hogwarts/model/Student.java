@@ -1,8 +1,10 @@
 package ru.hogwarts.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 import java.util.Objects;
 
@@ -13,6 +15,10 @@ public class Student {
     private Long id;
     private String name;
     private int age;
+    @ManyToOne
+    @JsonIgnore
+    private Faculty faculty;
+
 
     public Student() {
     }
@@ -50,6 +56,7 @@ public class Student {
         return id;
     }
 
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -70,4 +77,11 @@ public class Student {
         this.age = age;
     }
 
+    public Faculty getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(Faculty faculty) {
+        this.faculty = faculty;
+    }
 }
