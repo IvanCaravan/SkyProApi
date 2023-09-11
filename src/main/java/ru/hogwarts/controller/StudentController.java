@@ -4,11 +4,11 @@ package ru.hogwarts.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ru.hogwarts.model.Faculty;
 import ru.hogwarts.model.Student;
 import ru.hogwarts.service.StudentService;
 
 import java.util.Collection;
-import java.util.Collections;
 
 @RestController
 @RequestMapping("/student")
@@ -34,7 +34,7 @@ public class StudentController {
         return studentService.createStudent(student);
     }
 
-    @PutMapping
+    @PutMapping("{id}")
     public ResponseEntity<Student> editStudent(@RequestBody Student student, @PathVariable Long id) {
         Student foundStudent = studentService.updateStudent(id, student);
         if (foundStudent == null) {
@@ -63,5 +63,10 @@ public class StudentController {
             throw new  RuntimeException();
         }
         return ResponseEntity.ok(studentService.findByAgeBetween(min, max));
+    }
+
+    @GetMapping
+    public ResponseEntity<Faculty> getFacultyByStudent(@RequestBody Student student) {
+        return ResponseEntity.ok(studentService.getFacultyByStudent(student));
     }
 }

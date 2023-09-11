@@ -3,10 +3,10 @@ package ru.hogwarts.service;
 import org.springframework.stereotype.Service;
 import ru.hogwarts.exception.FacultyNotFoundException;
 import ru.hogwarts.model.Faculty;
+import ru.hogwarts.model.Student;
 import ru.hogwarts.repository.FacultyRepository;
 
 import java.util.Collection;
-import java.util.stream.Collectors;
 
 @Service
 public class FacultyServiceImpl implements FacultyService {
@@ -23,7 +23,7 @@ public class FacultyServiceImpl implements FacultyService {
 
     @Override
     public Faculty getFaculty(Long id) {
-        return facultyRepository.findById(id).orElseThrow(()-> new FacultyNotFoundException("Faculty not found"));
+        return facultyRepository.findById(id).orElseThrow(() -> new FacultyNotFoundException("Faculty not found"));
     }
 
     @Override
@@ -50,6 +50,10 @@ public class FacultyServiceImpl implements FacultyService {
         return facultyRepository.getAllByColor(color);
     }
 
-    
+    @Override
+    public Collection<Student> getStudentsByFaculty(Faculty faculty) {
+        return faculty.getStudents();
+    }
+
 
 }
