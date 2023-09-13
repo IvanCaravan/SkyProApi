@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa60a57e-38ca-480d-ad10-ad7b2c425978" name="Changes" comment="">
+    <list default="true" id="aa60a57e-38ca-480d-ad10-ad7b2c425978" name="Changes" comment="HW SQL_2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/AvatarController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/model/Avatar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/AvatarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/AvatarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/AvatarServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/FacultyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/FacultyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/FacultyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/FacultyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/FacultyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/FacultyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,9 @@
       <workItem from="1694330189123" duration="5847000" />
       <workItem from="1694429216245" duration="296000" />
       <workItem from="1694430041051" duration="770000" />
-      <workItem from="1694448637630" duration="4159000" />
+      <workItem from="1694448637630" duration="4540000" />
+      <workItem from="1694597190143" duration="2229000" />
+      <workItem from="1694631150561" duration="3989000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -205,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694337458020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HW SQL_2">
+      <option name="closed" value="true" />
+      <created>1694459332653</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694459332653</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +241,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="hw" />
     <MESSAGE value="HW SQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW SQL" />
+    <MESSAGE value="HW SQL_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW SQL_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

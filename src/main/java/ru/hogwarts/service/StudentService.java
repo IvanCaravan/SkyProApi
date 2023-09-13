@@ -1,8 +1,11 @@
 package ru.hogwarts.service;
 
+import org.springframework.web.multipart.MultipartFile;
+import ru.hogwarts.model.Avatar;
 import ru.hogwarts.model.Faculty;
 import ru.hogwarts.model.Student;
 
+import java.io.IOException;
 import java.util.Collection;
 
 public interface StudentService {
@@ -22,4 +25,5 @@ public interface StudentService {
     Collection<Student> findByAgeBetween(int min, int max);
 
     Faculty getFacultyByStudent(Student student);
+
 }
