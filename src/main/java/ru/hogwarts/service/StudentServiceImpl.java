@@ -5,13 +5,15 @@ import ru.hogwarts.exception.StudentNotFoundException;
 import ru.hogwarts.model.Faculty;
 import ru.hogwarts.model.Student;
 import ru.hogwarts.repository.StudentRepository;
-
 import java.util.Collection;
-
+import ru.hogwarts.repository.AvatarRepository;
 
 @Service
 public class StudentServiceImpl implements StudentService {
+
     private final StudentRepository studentRepository;
+
+
 
     public StudentServiceImpl(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
@@ -59,4 +61,5 @@ public class StudentServiceImpl implements StudentService {
     public Faculty getFacultyByStudent(Student student) {
         return student.getFaculty();
     }
+
 }
