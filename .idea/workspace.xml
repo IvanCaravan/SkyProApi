@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa60a57e-38ca-480d-ad10-ad7b2c425978" name="Changes" comment="HW SQL_2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/AvatarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/model/Avatar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/AvatarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/AvatarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/AvatarServiceImpl.java" afterDir="false" />
+    <list default="true" id="aa60a57e-38ca-480d-ad10-ad7b2c425978" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/controller/FacultyControllerMockMvcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/service/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/AvatarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/AvatarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/FacultyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/FacultyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/repository/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +93,7 @@
       <recent name="C:\Users\Marina\IdeaProjects\SkyProWha\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.FacultyControllerMockMvcTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.hogwarts.Application" />
       <module name="school" />
@@ -125,6 +120,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FacultyControllerMockMvcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="school" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.FacultyControllerMockMvcTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacultyControllerMockMvcTest.testGetFacultyById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="school" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.FacultyControllerMockMvcTest" />
+      <option name="METHOD_NAME" value="testGetFacultyById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="school" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.hogwarts.Application" />
@@ -140,6 +166,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FacultyControllerMockMvcTest" />
+        <item itemvalue="JUnit.FacultyControllerMockMvcTest.testGetFacultyById" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.Main" />
@@ -172,7 +200,9 @@
       <workItem from="1694430041051" duration="770000" />
       <workItem from="1694448637630" duration="4540000" />
       <workItem from="1694597190143" duration="2229000" />
-      <workItem from="1694631150561" duration="3989000" />
+      <workItem from="1694631150561" duration="4724000" />
+      <workItem from="1695020814888" duration="3724000" />
+      <workItem from="1695393605546" duration="702000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -214,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694459332653</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="HW AVATAR">
+      <option name="closed" value="true" />
+      <created>1694636877441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694636877441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +280,8 @@
     <MESSAGE value="hw" />
     <MESSAGE value="HW SQL" />
     <MESSAGE value="HW SQL_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW SQL_2" />
+    <MESSAGE value="HW AVATAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW AVATAR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
